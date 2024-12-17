@@ -1,0 +1,164 @@
+main {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #050706;
+}
+
+
+.view-menu {
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.view-menu button {
+    margin-top: 115px;
+    margin-bottom: 20px;
+}
+
+.view-menu p {
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
+.what-we-offer {
+    background-image: url('/img/home/what-we-offer__background.svg');
+    padding-bottom: 170px;
+}
+
+.what-we-offer__top img:nth-of-type(2) {
+    position: relative;
+    top: 40px;
+}
+
+.what-we-offer__center {
+    margin-top: 73px;
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.what-we-offer__center h2,
+.reviews h2 {
+    border-bottom: 5px solid #F3DEE5;
+}
+
+.what-we-offer__center p {
+    line-height: 32px;
+    max-width: 671px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.what-we-offer__bottom {
+    margin-top: 45px;
+}
+
+.what-we-offer__bottom-block {
+    gap: 23px;
+}
+
+.about-us {
+    background-color: #40BFFF;
+}
+
+.about-us__block-text {
+    background-image: url('/img/home/glove.svg');
+    background-repeat: no-repeat;
+    background-position: 684px 329px;
+    padding: 100px 30px 0 145px;
+}
+
+.about-us__block-text__separator {
+    border-top: 5px solid #F3DEE5;
+    width: 72px;
+    margin: 30px 0;
+}
+
+.about-us__block-text p {
+    line-height: 32px;
+    margin-bottom: 10px;
+    max-width: 780px;
+}
+
+.reviews {
+    margin-top: 60px;
+    margin-bottom: 85px;
+}
+
+.reviews__review-block {
+    margin-top: 110px;
+    gap: 100px;
+}
+
+.reviews__review-block button{
+    padding: 0;
+    background: none;
+}
+
+.reviews__review-block__content {
+    gap: 70px;
+}
+
+.reviews__review-block__text {
+    max-width: 580px;
+}
+
+.reviews__review-block__text p:first-of-type {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+
+
+@media(max-width: 1850px) {
+    .what-we-offer__top {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .what-we-offer__top img:nth-of-type(2) {
+        position: static;
+        height: 380px;
+    }
+}
+
+@media(max-width: 1630px) {
+    .what-we-offer {
+        padding-bottom: 100px;
+    }
+
+    .what-we-offer__bottom {
+        gap: 95px;
+        justify-content: center;
+    }
+
+    .about-us {
+        flex-wrap: wrap;
+        width: 829px;
+        align-self: center;
+    }
+
+    .about-us__block-text {
+        background-position: 500px 280px;
+        padding: 50px 30px;
+    }
+    .reviews__review-block{
+        gap: 40px;
+    }
+    .reviews__review-block__content{
+        gap: 30px;
+    }
+    .reviews__review-block__text {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 850px){
+    
+}
