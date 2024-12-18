@@ -78,6 +78,10 @@ h1 {
     flex-wrap: wrap;
 }
 
+.j-c_c{
+    justify-content: center;
+}
+
 .background {
     background-repeat: no-repeat;
     background-size: contain;
@@ -186,4 +190,10 @@ footer a {
 
 .footer-bottom__media-links{
     gap: 20px;
+}
+
+@media(max-width: 850px){
+    footer{
+        display: none;
+    }
 }
