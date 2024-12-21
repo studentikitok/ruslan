@@ -21,6 +21,7 @@ main {
     padding: 25px 60px;
     background-color: #40BFFF;
     color: white;
+    gap: 10px;
 }
 
 .holidays-cakes__block-text h2 {
@@ -123,4 +124,11 @@ main {
 
 .product-cards__page-number__item:hover{
     border-top: 5px solid #40BFFF;
+}
+
+@media(max-width: 900px){
+    .holidays-cakes {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
