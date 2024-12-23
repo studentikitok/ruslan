@@ -1,0 +1,108 @@
+main {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.contact-us {
+    margin: 130px calc((100% - 1600px) / 2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-us__get-in-touch {
+    color: white;
+    background-image: url('/img/contact-us/get-it-touch-background.svg');
+    padding: 31px 8px;
+    width: 50%;
+}
+
+.contact-us__get-in-touch__contacts {
+    position: relative;
+    right: 58px;
+    top: 40px;
+}
+
+.contact-us__get-in-touch__contacts h2 {
+    font-weight: 600;
+    font-size: 64px;
+    max-width: 200px;
+    line-height: 75px;
+}
+
+.contact-us__get-in-touch__contacts p:first-of-type {
+    margin-top: 90px;
+}
+
+.contact-us__get-in-touch__contacts p:nth-of-type(2) {
+    margin: 25px 0;
+}
+
+
+.contact-us__form {
+    width: 50%
+}
+
+.contact-us__form form {
+    width: calc(100% - 100px);
+
+}
+
+.contact-us__form label {
+    font-size: 14px;
+}
+
+.contact-us__form input,
+textarea {
+    font-size: 16px;
+    border: 1px solid #969393;
+    padding: 25px 35px;
+    width: calc(100% - 70px);
+    border-radius: 0 3px 3px 0;
+}
+
+.contact-us__form textarea {
+    height: 160px;
+    resize: none;
+}
+
+.contact-us__form input:focus {
+    outline: none;
+    border: 1px solid #33A0FF;
+}
+
+.search-query {
+    margin: 0 30% 300px;
+}
+
+.search-query form {
+    height: 64px;
+}
+
+.search-query input {
+    border-radius: 3px 0 0 3px;
+    border: 2px solid #BCDDFE;
+    width: 100%;
+    border-right: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    outline: none;
+}
+
+.search-query input:focus {
+    border: 2px solid #33A0FF;
+}
+
+.search-query button {
+    font-weight: 600;
+    border-radius: 0 3px 3px 0;
+    width: 160px;
+    font-size: 20px;
+}
+
+@media(max-width: 1920px) {
+    .contact-us {
+        margin: 130px 8%;
+    }
+}

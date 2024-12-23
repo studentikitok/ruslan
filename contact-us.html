@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связь с нами</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@400;500;700&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact-us.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="header-logo"><img src="img/universal/logo.svg" alt="logo"></div>
+        <div class="header-links d_f a-i_c j-c_s-b">
+            <p class="header-links__logo-text">Кондитерская имени Алиева</p>
+            <div class="header-links__block-links d_f">
+                <a href="home.html">Главная</a>
+                <a href="#">О нас</a>
+                <a href="products-list.html" class="a-active">Меню</a>
+                <a href="contact-us.html">Контакты</a>
+            </div>
+        </div>
+    </header>
+    <main class="d_f f-d_c">
+        <section class="breadcrumbs d_f j-c_c montserrat-regular">
+            <a href="home.html">Главная</a>
+            <p>
+            <pre> / </pre>
+            </p>
+            <p>Связь с нами</p>
+        </section>
+        <section class="contact-us d_f">
+            <div class="contact-us__get-in-touch background d_f">
+                <img src="img/contact-us/get-in-touch.svg" alt="get-in-touch">
+                <div class="contact-us__get-in-touch__contacts poppins-medium">
+                    <h2>get in touch</h2>
+                    <p>ruslan.aliev.2005@bk.ru</p>
+                    <p>+7 913 889 38 34</p>
+                    <p>Советская 14, Томск, Россия</p>
+                </div>
+            </div>
+            <div class="contact-us__form d_f a-i_c">
+                <form class="poppins-medium" action="#" method="POST">
+                    <label for="name">Имя</label><br>
+                    <input type="text" id="name" name="name" placeholder="Aliev Ruslan" required><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="ruslan.aliev.2005@bk.ru" required><br><br>
+
+                    <label for="message">Сообщение</label><br>
+                    <textarea id="message" name="message" placeholder="введите своё сообщение"
+                        required></textarea><br><br>
+
+                    <button class="button-blue" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="search-query">
+            <form action="GET" class="d_f">
+                <input type="text" placeholder="Поисковой запрос..." required>
+                <button class="button-blue" type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top container">
+            <div class="footer-top__column-links d_f f-d_c">
+                <a href="home.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Team</a>
+                <a href="#">FAQs</a>
+                <a href="#">Careers</a>
+                <a href="contact-us.html">Contact us</a>
+            </div>
+            <div class="footer-top__column-contact d_f f-d_c">
+                <p class="montserrat-medium">Contact</p>
+                <p>Sovetskaya 14 <br>
+                    Tomsk, Russia <br>
+                    +7-913-889-38-34
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.2106267623667!2d84.95087577742423!3d56.481358973362504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4326935e1b5aaa9f%3A0xa3e43b7f4e3cd69f!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCAxNCwg0KLQvtC80YHQuiwg0KLQvtC80YHQutCw0Y8g0L7QsdC7LiwgNjM0MDUw!5e0!3m2!1sru!2sru!4v1734444733806!5m2!1sru!2sru"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-bottom container d_f a-i_c j-c_s-b">
+            <p>Copyright @ 2024 Delicate confectionery</p>
+            <div class="footer-bottom__media-links d_f a-i_c">
+                <a href="#"><img src="img/universal/vk-icon.svg" alt="vk-icon"></a>
+                <a href="#"><img src="img/universal/yt-icon.svg" alt="yt-icon"></a>
+                <a href="#"><img src="img/universal/tg-icon.svg" alt="tg-icon"></a>
+            </div>
+            <p>Created by AlievRuslan(gr431)</p>
+        </div>
+    </footer>
+</body>
+
+</html>
