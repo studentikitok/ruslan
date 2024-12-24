@@ -9,13 +9,17 @@ main {
 .contact-us {
     margin: 130px calc((100% - 1600px) / 2);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    gap: 15px;
+    height: 635px;
 }
 
 .contact-us__get-in-touch {
     color: white;
     background-image: url('/img/contact-us/get-it-touch-background.svg');
     padding: 31px 8px;
-    width: 50%;
+    width: 100%;
+    background-position: right;
+    background-size: cover;
 }
 
 .contact-us__get-in-touch__contacts {
@@ -41,7 +45,7 @@ main {
 
 
 .contact-us__form {
-    width: 50%
+    width: 100%;
 }
 
 .contact-us__form form {
@@ -73,7 +77,7 @@ textarea {
 }
 
 .search-query {
-    margin: 0 30% 300px;
+    margin: 0 30% 150px;
 }
 
 .search-query form {
@@ -103,6 +107,59 @@ textarea {
 
 @media(max-width: 1920px) {
     .contact-us {
-        margin: 130px 8%;
+        margin: 65px 8%;
+    }
+}
+
+@media(max-width: 1320px){
+    .contact-us__get-in-touch img{
+        display: none;
+    }
+    .contact-us__get-in-touch__contacts{
+        position: static;
+    }
+    .contact-us > div{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 850px){
+    .container {
+        padding: 0 8%;
+    }
+    .contact-us{
+        flex-direction: column;
+        height: auto;
+        border-radius: 10px;
+    }
+    .contact-us__get-in-touch{
+        background-image: url('/img/contact-us/get-it-touch-background-adaptive.svg');
+        background-position: bottom;
+        padding: 35px 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .contact-us__get-in-touch__contacts{
+        text-align: center;
+    }
+    .contact-us__get-in-touch__contacts h2{
+        max-width: max-content;
+    }
+    .contact-us__get-in-touch__contacts p:first-of-type {
+        margin-top: 30px;
+    }
+    .contact-us__form{
+        margin-bottom: 25px;
+    }
+    .contact-us__form form {
+        width: calc(100% - 50px);
+    }
+    .search-query{
+        margin: 0 8% 150px;
+    }
+    .search-query input{
+        border-radius: 10px 0 0 10px;
+    }
+    .search-query button{
+        border-radius: 0 10px 10px 0;
     }
 }
