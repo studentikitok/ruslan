@@ -40,7 +40,8 @@ main {
 
 .product-cards {
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(385px, 1fr));;
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+    ;
     margin: 0 6% 65px;
     justify-items: center;
     gap: 30px;
@@ -64,7 +65,8 @@ main {
     color: white;
     align-self: flex-start;
 }
-.product-cards__card > img{
+
+.product-cards__card>img {
     width: 100%;
     height: 276px;
     object-fit: cover;
@@ -86,39 +88,98 @@ main {
     font-size: 20px;
     color: #40BFFF;
 }
-.product-cards__card__info-price__sail{
+
+.product-cards__card__info-price__sail {
     gap: 8px;
     font-size: 14px;
     color: #FB7181;
 }
 
-.product-cards__card__info-price__sail p:first-of-type{
+.product-cards__card__info-price__sail p:first-of-type {
     color: #9098B1;
     text-decoration: line-through;
 }
 
-.product-cards__page-number{
+.product-cards__page-number {
     height: 75px;
     background-color: #FAFAFB;
     margin-bottom: 300px;
 }
-.product-cards__page-number__item{
+
+.product-cards__page-number__item {
     width: 95px;
     color: #22262A;
     transition: border-top 0.3s ease;
 }
-.product-cards__page-number >.item-active{
+
+.product-cards__page-number>.item-active {
     color: white;
     background-color: #40BFFF;
 }
 
-.product-cards__page-number__item:hover{
+.product-cards__page-number__item:hover {
     border-top: 5px solid #40BFFF;
 }
 
-@media(max-width: 900px){
+@media(max-width: 900px) {
     .holidays-cakes {
         flex-direction: column;
         gap: 50px;
+        padding: 25px 30px;
+    }
+    .holidays-cakes__block-text h2{
+        margin: 0 0 20px;
+        line-height: 32px;
+    }
+
+    .header-adaptive__search-product,
+    .header-adaptive__favourites,
+    .header-adaptive__notifications{
+        display: none;
+    }
+    
+    .product-cards {
+        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+        gap: 13px;
+        margin: 0 calc((100% - 92%) / 2) 50px;
+    }
+
+    .product-cards__card {
+        width: 131px;
+        height: 231px;
+        padding: 16px;
+        border: 1px solid #EBF0FF;
+    }
+
+    .product-cards__card__hot {
+        left: 1px;
+        padding: 5px 8px;
+    }
+
+    .product-cards__card>img {
+        width: 133px;
+        height: 133px;
+    }
+
+    .product-cards__card__info {
+        gap: 4px;
+        padding: 0;
+    }
+
+    .product-cards__card__info img {
+        align-self: flex-start;
+    }
+
+    .product-cards__card__info-price {
+        margin-top: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-cards__card__info>img {
+        height: 12px;
+    }
+    .product-cards__page-number {
+        margin-bottom: 0;
     }
 }

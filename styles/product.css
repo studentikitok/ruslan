@@ -249,3 +249,121 @@ main>h2 {
     color: #9098B1;
     text-decoration: line-through;
 }
+
+.product-review {
+    display: none;
+}
+
+@media(max-width: 1450px) {
+    .product-card__pictures {
+        width: 300px;
+    }
+
+    .product-card__pictures>img {
+        width: calc(100% - 4px);
+        height: auto;
+    }
+
+    .product-card__pictures-bottom {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .product-card__pictures-bottom img {
+        width: 47%;
+        height: auto;
+    }
+}
+
+@media(max-width: 1000px) {
+    .product-card__block__pictures-and-actions {
+        flex-direction: column;
+    }
+
+    .product-card__pictures {
+        width: 100%
+    }
+
+    .product-card__pictures-bottom img {
+        width: 24%;
+    }
+}
+
+@media(max-width: 850px) {
+
+    .header-adaptive__search-product,
+    .header-adaptive__notifications,
+    .product-card__block__actions-review a,
+    .product-card__block__actions__bottom-add-panel {
+        display: none;
+    }
+
+    .product-card__block__pictures-and-actions {
+        flex-direction: column;
+    }
+
+    .product-card__block__actions>.product-cards__card__info-price {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .product-card__pictures-bottom img {
+        width: 48%;
+    }
+
+    .product-card__block__description-sections {
+        justify-content: center;
+    }
+
+    .product-card__block__description-sections button:not(:first-of-type) {
+        display: none;
+    }
+
+    .product-review {
+        display: flex;
+        gap: 16px;
+        margin: 0 calc((100% - 343px) / 2);
+        margin-top: 75px;
+    }
+
+    .product-review div:first-of-type p {
+        color: #223263;
+    }
+
+    .product-review div:first-of-type a {
+        color: #40BFFF;
+    }
+
+    .product-review__overall-assessment {
+        gap: 5px;
+        height: 18px;
+        color: #9098B1;
+    }
+
+    .product-review__block {
+        gap: 12px;
+    }
+
+    .product-review__block__reviewer {
+        gap: 10px;
+    }
+
+    .product-review__block__description {
+        color: #9098B1;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+    }
+
+    .product-review__block__photos {
+        gap: 12px;
+    }
+
+    .product-review__block_date {
+        color: #9098B1;
+    }
+
+    main>h2 {
+        font-size: 26px;
+        align-self: flex-start;
+    }
+}

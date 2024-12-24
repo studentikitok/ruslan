@@ -95,7 +95,7 @@ h2 {
     gap: 100px;
 }
 
-.reviews__review-block button{
+.reviews__review-block button {
     padding: 0;
     background: none;
 }
@@ -148,17 +148,70 @@ h2 {
         background-position: 500px 280px;
         padding: 50px 30px;
     }
-    .reviews__review-block{
+
+    .reviews__review-block {
         gap: 40px;
     }
-    .reviews__review-block__content{
+
+    .reviews__review-block__content {
         gap: 30px;
     }
+
     .reviews__review-block__text {
         max-width: 400px;
     }
 }
 
-@media(max-width: 850px){
-    
+@media(max-width: 850px) {
+    .what-we-offer__top img {
+        width: 112px;
+        height: 112px;
+    }
+
+    .what-we-offer__top img:nth-of-type(2) {
+        width: 130px;
+        height: 142px;
+        position: relative;
+        top: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .view-menu {
+        margin-top: 10px;
+    }
+
+    .view-menu button {
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    .what-we-offer__top {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .what-we-offer {
+        background: none;
+    }
+
+    .what-we-offer>div:not(:first-of-type) {
+        display: none;
+    }
+
+    .about-us,
+    .about-us img {
+        width: 375px;
+    }
+
+    .about-us__block-text {
+        background-image: url(/img/home/glove-adaptive.svg);
+        background-position: 270px 670px;
+        background-size: 50px;
+    }
+    .reviews{
+        display: none;
+    }
 }
