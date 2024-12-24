@@ -312,6 +312,7 @@ main>h2 {
 
     .footer-adaptive {
         padding: 8px calc((100% - 343px) / 2) 0;
+        margin-top: 16px;
     }
     .footer-adaptive a{
         width: 100%;
@@ -320,5 +321,13 @@ main>h2 {
         padding: 16px;
         width: 100%;
         line-height: 180%;
+    }
+}
+
+
+@media(max-width: 405px){
+    .product-cards{
+        display: flex;
+        overflow: auto;
     }
 }

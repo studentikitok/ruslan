@@ -113,8 +113,10 @@ h2 {
     line-height: 32px;
 }
 
-
-
+.title-for-adaptive-product-cards,
+.product-cards {
+    display: none;
+}
 
 @media(max-width: 1850px) {
     .what-we-offer__top {
@@ -211,7 +213,37 @@ h2 {
         background-position: 270px 670px;
         background-size: 50px;
     }
-    .reviews{
+
+    .reviews {
         display: none;
+    }
+
+    .footer-adaptive {
+        margin-top: 16px;
+    }
+
+    .title-for-adaptive-product-cards h2 {
+        font-size: 14px;
+    }
+    .title-for-adaptive-product-cards a{
+        text-align: end;
+        color: #40BFFF;
+        font-size: 14px;
+    }
+    .title-for-adaptive-product-cards {
+        margin: 70px calc((100% - 343px) / 2) 40px;
+        display: flex;
+    }
+
+    .product-cards {
+        display: grid;
+        margin: 0 calc((100% - 343px) / 2);
+    }
+}
+
+@media(max-width: 405px) {
+    .product-cards {
+        display: flex;
+        overflow: auto;
     }
 }
